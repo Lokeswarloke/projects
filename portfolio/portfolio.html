@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/7ac9c8cda7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer science Engineering Student</p>
+            <h1>Hi,I'm <span>Lokeswar</span></h1>
 
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="s1.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Present I am studying BTECH-CSE in N.B.K.R.INSTITUTE OF SCIENCE & TECHNOLOGY. I had completed my Diploma in Electricals & Electronics Engineering.And I had changed EEE to CSE in BTECH based on my interest.I can't stop learning new things.I have a quick learning capability through this I had Learned Java script and Web development.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link">Skills:</p>
+                </div>
+                <div class="tab-contents active-tab" >
+                    <ul>
+                        <li><span>Technical skills</span><br>Proficiency with and programming languages as well as coding for automation softwares using ladder Programming</li>
+                        <li><span>Soft Skills</span><br>Listening capability,communication,Time Management</li>
+                        <li><span>Other Skills</span><br>APSSDC skills</li>
+                    </ul>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links">Experience:</p>
+                    
+
+                </div>
+                <div class="tab-contents" >
+                    <ul>
+                        <li><span>APSSDC</span><br>Software Automation Agent</li>
+                        <li><span>Microsoft</span><br>Software Engineering Agent</li>
+                        <li><span>Cisco</span><br>Software Engineering Agent</li>
+                        <li><span>Internship</span><br>Web DEveloper Intern and APSSDC Intern</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="M1.png">
+                <div class="layer">
+                    <h3>SMS Login Page</h3>
+                    <p>The image shows the login page of SMS(Student Management System)project developed using netbeans for application development using java</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="M2.png">
+                <div class="layer">
+                    <h3>Login Page</h3>
+                    <p>The image shows the student registration form by using netbeans for application development  using Java</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="M4.png">
+                <div class="layer">
+                    <h3>LMS Home Page</h3>
+                    <p>The image shows the student details list using java in netbeans</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@lokeswar.com</p>
+                <p><i class="fa-solid fa-phone"></i>78*******5</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+              
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © lokeswar</p>
+    </div>
+</div>
+ <script>
+     var sidemenu=document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right="0";
+     }
+     function closemenu(){
+        sidemenu.style.right="-200px";
+     }
+ </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQlm2HMnPnUwX2b4hhiNPRYHDhkNwxUexDrovA6z_FqosyCcnrsfNW1T92LvBJcxrTvg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>

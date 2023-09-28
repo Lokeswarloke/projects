@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: 
+                url('car123.jpg');
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex; 
+    justify-content: space-around;
+    align-items:center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration:wavy;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+
+.signup a{
+    text-decoration:aqua;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.signup a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.tours{
+    max-width: 650px;
+    position: absolute;
+    top: 37%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.tours span{
+    letter-spacing: 5px;
+}
+.tours h1{
+    font-size: 3.5em;
+}
+.tours a{
+    text-decoration: none;
+    background: rgba(228, 73, 38, 0.777);
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.tours a:hover{
+    background: transparent;
+    border: 2px solid rgb(241, 0, 0);
+}

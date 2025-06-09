@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    .navbar{
+        top: 0px;
+        height:70px;
+        position: sticky;
+        background-color: white;
+        border-bottom: 1px solid grey;
+        display: flex;
+    }
+    #meshoimg{
+        height: 36px;
+        width:156px;
+        padding-top: 8px;
+        padding-left: 55px;
+    }
+    .search{
+        height: 44.2px;
+        width: 585px;
+        position: relative;
+        top: 7.6px;
+        left: 35px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        
+    }
+    #searchicon{
+        height: 23px;
+        width: 23px;
+        position: relative;
+        top: 11px;
+        left:9px;
+    }
+    #searchtext{
+        color: grey;
+        font-size: medium;
+        border: none;
+        position: relative;
+        top: 8px;
+        left: 6px;
+        width: 350px;
+
+    }
+    .basupplier{
+        height: 44.2px;
+        width: 180px;
+        position: relative;
+        top: 7.6px;
+        left: 100px;
+        border-right: 2px solid grey;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .investor{
+        height: 44.2px;
+        width: 180px;
+         position: relative;
+        top: 7.6px;
+        left: 100px;
+        border-right: 2px solid grey;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-down{
+        top: 70px;
+        height: 50px;
+        border-bottom: 1px solid grey;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: sticky;
+    }
+    .pages{
+        position: relative;
+        height: 27px;
+        width:fit-content;
+        align-items: center;
+        padding-top: 20px;
+        animation-name: effectbutton;
+    }
+    .pages:hover{
+        color: purple;
+        border-bottom:4px solid purple;
+    }
+    .adv{
+        top: 4px;
+        height: 400px;
+        background-image: url("https://images.meesho.com/images/marketing/1746425994914.webp");
+        background-attachment:scroll;
+    }
+    .shopnow{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50px;
+        width: 140px;
+        font-weight: 500;
+        font-size: x-large;
+        border-radius: 8px;
+        background-color: white;
+        position: relative;
+        top: 280px;
+        left: 1100px;
+        
+    }
+    .profile{
+        top: 10px;
+        left: 145px;
+        height: 68px;
+        width: fit-content;
+        align-items: center;
+        position: relative;
+    }
+   
+    .cart{
+         height: 68px;
+        width: fit-content;
+         top:2px;
+        left: 185px;
+        align-items: center;
+        position: relative;
+    }
+    
+    #pfi{
+        padding-left: 7px;
+        padding-bottom: 0px;
+    }
+    #carti{
+        padding-bottom: 0%;
+    }
+    #ct1{
+        position: absolute;
+        top: 38px;
+        left: 10px;
+    }
+    .shipment{
+        height: 45px;
+        border: 1px solid pink;
+        position: relative;
+        top: 13px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .shipcon{
+        background-color: #fdeefa;
+        height: 70px;
+    }
+    .accessories{
+        height: 500px;
+    }
+</style>
+<body>
+    <div class="home">
+        <div class="navbar">
+            <img id="meshoimg" src="https://www.meesho.com/assets/svgicons/meeshoLogo.svg" alt="meesho" >
+            <div class="search">
+                <img id="searchicon"src="https://tse4.mm.bing.net/th?id=OIP.nxnRuJmfmdV9oYf-51Kw7gAAAA&pid=Api&P=0&h=180" alt="searchicon">
+                <input type="text" placeholder="Try Saree, Kurti or Search By Product Code" id="searchtext">
+            </div>
+            <div class="basupplier">
+                <a href="">Become a Supplier</a>
+            </div>
+            <div class="investor">
+                <a href="">Investor Relations
+                
+                </a>
+            </div>
+            <div class="profile">
+                <img id="pfi" src="https://vectorified.com/images/profile-photo-icon-7.png" alt="" height="25px" width="25px">
+                <br>
+                <a id="pf" href="">Profile</a>
+            </div>
+            <div class="cart">
+                <img id="carti" src="https://cdn-icons-png.flaticon.com/512/5166/5166615.png" alt="" height="45px" width="45px">
+                <br>
+                <a id="ct1" href="">Cart</a>
+            </div>
+        </div>
+        <div class="nav-down">
+            <div id="pages1"class="pages">Women Ethnic</div>
+            <div id="pages2" class="pages">Women Western</div>
+            <div id="pages3" class="pages">Men</div>
+            <div id="pages4" class="pages">Kids</div>
+            <div id="pages5" class="pages">Home & Kitchen</div>
+            <div id="pages6" class="pages">Beauty & Health</div>
+            <div id="pages7" class="pages">Jewellery & Accesories</div>
+            <div id="pages8" class="pages">Bags & Footwear</div>
+            <div id="pages9" class="pages">Electronics</div>
+            <div id="pages10" class="pages">Sports & Fitness</div>
+            <div id="pages11" class="pages">Car & Motorbike</div>
+            <div id="pages12" class="pages">Offic</div>
+
+        </div>
+        <div class="adv">
+            <div class="shopnow">
+                <a href="">Shop Now</div></a>
+
+        </div>
+        <div class="shipcon">
+        <div class="shipment">
+            <div class="ele1">7 Days Easy Return</div>
+            <div class="ele2">Cash On Delivery</div>
+            <div class="ele3">Lowest Prices</div>
+        </div>
+        </div>
+        <div class="accessories">
+
+        </div>
+    </div>
+</body>
+</html>
